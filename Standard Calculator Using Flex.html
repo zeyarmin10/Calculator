@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        .calculator {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 2px;
+            width: 410px;
+            text-align: center;
+            background-color: #22252D;
+            border-radius: 5px;
+        }
+        h1 {
+            position: relative;
+            font-family: Ubuntu, Helvetica, sans-serif;
+            margin-top: 30px;
+            color: whitesmoke;
+        }
+        h1:hover {
+            color: dodgerblue;
+        }
+        input {
+            margin: 0px 4px 4px 2px;
+            border: none;
+            border-radius: 5px;
+            width: 400px;
+            line-height: 100px;
+            font-size: 50px;
+            text-align: right;
+            background-color: cornsilk;
+            box-shadow: 2px 2px 5px darkgray;
+            cursor: context-menu;
+        }
+        .num-pad {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            display: flex;
+            width: 410px;
+            flex-wrap: wrap;
+            justify-content: center;
+            cursor: context-menu;
+        }
+        .math-symbols {
+            margin 2px 1px 2px 1px;
+            background-color: #272B33;
+            border-radius: 5px;
+            float: left;
+            width: 100px;
+            margin: 1px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: floralwhite;
+            word-wrap: break-word;
+            box-shadow: 2px 2px 2px grey;
+        }
+        .numbers {
+            background-color: #F7F7F7;
+            float: left;
+            border-radius: 10px;
+            width: 100px;
+            margin: 2px 1px 2px 1px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            word-wrap: break-word;
+            box-shadow: 2px 2px 2px grey;
+        }
+        div.math-symbols:hover {
+            background-color: darkslategray;
+        }
+        div.numbers:hover {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Standard Calculator</h1>
+        <input type="text" id="number-box"><br>
+        <div class="num-pad" onclick="click()">
+            <div class="math-symbols">%</div>
+            <div class="math-symbols">CE</div>
+            <div class="math-symbols">C</div>
+            <div class="math-symbols">&#x232B;</div>
+            <div class="math-symbols"><sup>1</sup>/<sub><i>x</i></sub></div>
+            <div class="math-symbols">x<sup>2</sup></div>
+            <div class="math-symbols">&radic;x</div>
+            <div class="math-symbols">&#xf7;</div>
+            <div class="numbers">7</div>
+            <div class="numbers">8</div>
+            <div class="numbers">9</div>
+            <div class="math-symbols">&times;</div>
+            <div class="numbers">4</div>
+            <div class="numbers">5</div>
+            <div class="numbers">6</div>
+            <div class="math-symbols">-</div>
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="math-symbols">+</div>
+            <div class="numbers"><sup>+</sup>/<sub>-</sub></div>
+            <div class="numbers">0</div>
+            <div class="numbers">.</div>
+            <div class="math-symbols">=</div>
+        </div>
+    </div>
+</body>
+</html>
